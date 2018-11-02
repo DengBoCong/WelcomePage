@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/welcomimg3"/>
+    <!--我们在使用imageview时一些图片的尺寸大小比例不一样，为了让所有图片都
+    能填充整个imageview，就可以使用这个属性,它可以让图片保持原有比例充满imageview，
+    并将超出屏幕的部分裁剪掉。-->
+</LinearLayout>

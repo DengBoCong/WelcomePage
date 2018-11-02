@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--第四个View布局（也就是放置按钮的那个布局）要使用FrameLayout
+    因为需要使用Button在ImageView上方，普通的线性布局做不到，所以需
+    要使用帧布局（FrameLayout），即后定义的布局在上方，一层一层叠加-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/welcomimg11"/>
+
+    <!--正规来讲，应该尽量把宽度高度等值放在values的资源文件中，
+    这里为了方便，直接写在了布局文件中-->
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="160dp"
+        android:layout_height="42dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/button_shape"
+        android:text="立刻体验"
+        android:textColor="#ce102c"
+        android:textSize="18sp"
+        android:visibility="visible"/>
+
+</FrameLayout>
